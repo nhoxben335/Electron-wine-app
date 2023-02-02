@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wine catagory and type</title>
+    <style>
+      body{
+        background-color: #fcd8d4ff;
+        background-size: cover;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+          <!-- Name -->
+          <div class="mb-3">
+            <label for= "name" class="form-label">Name: </label>
+            <input type="text" class="form-control" id="name" required autofocus>
+          </div>
+
+          <div class="mb-3">
+          <!-- Category -->
+            <label for="category">Category: </label>
+              <select  class="form-select" id="category" name="category" require onchange="loadWineTypes()">
+                <option value="red">Red</option>
+                <option value="white">White</option>
+                <option value="dessert">Dessert</option>
+              </select>
+            </div>
+
+          <!-- Type -->
+
+          <div class="mb-3">
+            <label  class="form-label">Wine Type: </label>
+                <select class="form-select" id="type" required>
+                  
+                  <!-- Red -->
+                    <option value="Cabernet" selected>Cabernet</option>
+                    <option value="Cabernet Sauvignon">Cabernet Sauvignon</option>
+                    <option value="Chardonnay">Chardonnay</option>
+                    <option value="Malbec">Malbec</option>
+                    <option value="Merlot">Merlot</option>
+                    <option value="Sirah">Sirah</option>
+                    <option value="Pinot Noir">Pinot Noir</option>
+                    <option value="Port">Port</option>
+                    <option value="Other Red Varietie">Other Red Varietie</option>
+                    <option value="Red Blends">Red Blends</option>
+                </select>
+              </div>
+
+        <!-- Years -->
+        <div>
+          <label for="year">Year: </label> 
+          <input type="number" id="year" name="year">
+        </div>
+        
+        <!-- Winery -->
+        <div>
+        <label>Winery: </label>
+        <input type="text" id="winery" autofocus>
+        </div>
+        
+        <!-- Years purchased -->
+        <div>
+          <label for="purchased">Year Purchased : </label>
+            <input type="number" id="purchased" name="purchased">
+        </div>
+
+        <!-- Rating --> 
+        <div>
+            <label for="rating">Rating(1-10) :</label>
+            <input type="number" id="rating" name="rating" min="1" max="10">
+        </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+  <script src="addwin.js"></script>
+  </body>
+</html>
+
+
